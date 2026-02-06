@@ -358,6 +358,12 @@ a {
   margin-bottom: 40px;
 }
 
+.section-head.center {
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
 .section-head h2 {
   font-family: "Bebas Neue", sans-serif;
   font-size: clamp(36px, 4vw, 64px);
@@ -578,6 +584,38 @@ a {
   color: var(--muted);
 }
 
+.offer-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.offer-steps {
+  padding: 16px 18px;
+  border-radius: 14px;
+  border: 1px solid var(--line);
+  background: #fafaf7;
+  color: var(--muted);
+}
+
+.offer-steps-title {
+  font-weight: 600;
+  color: #0b0b0b;
+  margin-bottom: 8px;
+}
+
+.offer-steps-list {
+  list-style: none;
+  display: grid;
+  gap: 6px;
+}
+
+.offer-steps-list li::before {
+  content: "•";
+  margin-right: 8px;
+  color: var(--accent-2);
+}
+
 .offers-note {
   margin-top: 22px;
   padding: 18px 22px;
@@ -728,6 +766,11 @@ a {
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
 }
 
+.staff-grid.centered {
+  grid-template-columns: repeat(auto-fit, minmax(200px, 240px));
+  justify-content: center;
+}
+
 .staff-card {
   padding: 24px;
   border-radius: var(--radius);
@@ -738,9 +781,22 @@ a {
   gap: 18px;
 }
 
+.staff-card.centered {
+  text-align: center;
+  align-items: center;
+}
+
+.staff-card.compact {
+  max-width: 260px;
+  padding: 18px;
+  gap: 12px;
+  margin: 0 auto;
+}
+
 .staff-avatar {
-  width: 100%;
-  aspect-ratio: 1 / 1;
+  width: 140px;
+  height: 140px;
+  margin: 0 auto;
   border-radius: 18px;
   overflow: hidden;
   background: #111;
@@ -775,6 +831,10 @@ a {
 
 .staff-tags.primary {
   margin-bottom: 10px;
+}
+
+.staff-card.centered .staff-tags {
+  justify-content: center;
 }
 
 .staff-tag {
@@ -828,6 +888,20 @@ a {
   border-color: #f1c18b;
   color: #3b2a16;
   box-shadow: 0 10px 24px rgba(255, 210, 160, 0.35);
+}
+
+.staff-tag.tag-manager {
+  background: linear-gradient(135deg, #2a9df4, #1b5fb8);
+  border-color: #1b5fb8;
+  color: #ffffff;
+  box-shadow: 0 10px 24px rgba(27, 95, 184, 0.35);
+}
+
+.staff-tag.tag-artist {
+  background: linear-gradient(135deg, #5a4bff, #2b1f8a);
+  border-color: #2b1f8a;
+  color: #ffffff;
+  box-shadow: 0 10px 24px rgba(43, 31, 138, 0.35);
 }
 
 .admin-section .staff-grid {
@@ -895,6 +969,16 @@ a {
 
 .section.dark .offer-price,
 .section.dark .offer-ticket {
+  color: #fff;
+}
+
+.section.dark .offer-steps {
+  background: #111;
+  border-color: rgba(255, 255, 255, 0.12);
+  color: #c9c9c9;
+}
+
+.section.dark .offer-steps-title {
   color: #fff;
 }
 
