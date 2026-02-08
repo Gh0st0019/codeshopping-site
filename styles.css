@@ -625,6 +625,78 @@ a {
   color: var(--muted);
 }
 
+.nitro-grid {
+  display: grid;
+  gap: 24px;
+}
+
+.nitro-card {
+  position: relative;
+  overflow: hidden;
+  padding: 26px;
+  border-radius: var(--radius);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: #111;
+  color: #fff;
+  box-shadow: 0 22px 55px rgba(0, 0, 0, 0.25);
+}
+
+.nitro-card::before {
+  content: "";
+  position: absolute;
+  inset: 0 auto 0 0;
+  width: 4px;
+  background: linear-gradient(180deg, #ff66cc, #8c5bff);
+}
+
+.nitro-card h3 {
+  margin-bottom: 8px;
+  font-size: 22px;
+}
+
+.nitro-card p {
+  margin-bottom: 18px;
+  max-width: 520px;
+  color: #c9c9c9;
+}
+
+.nitro-list {
+  list-style: none;
+  display: grid;
+  gap: 12px;
+}
+
+.nitro-list li {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 14px;
+  border-radius: 14px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.nitro-icon {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  background: linear-gradient(135deg, #ff66cc, #8c5bff);
+}
+
+.nitro-label {
+  font-weight: 600;
+}
+
+.nitro-price {
+  font-weight: 700;
+}
+
 .pricing {
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
 }
