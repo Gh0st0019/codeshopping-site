@@ -949,10 +949,10 @@ a {
 }
 
 .staff-tag.tag-admin {
-  background: linear-gradient(135deg, #2f2f2f, #141414);
-  border-color: #0b0b0b;
+  background: linear-gradient(135deg, #ff3b3b, #d50000);
+  border-color: #b30000;
   color: #ffffff;
-  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 10px 24px rgba(213, 0, 0, 0.35);
 }
 
 .staff-tag.tag-designer {
@@ -963,10 +963,10 @@ a {
 }
 
 .staff-tag.tag-manager {
-  background: linear-gradient(135deg, #2a9df4, #1b5fb8);
-  border-color: #1b5fb8;
+  background: linear-gradient(135deg, #7a1f1f, #3a0b0b);
+  border-color: #3a0b0b;
   color: #ffffff;
-  box-shadow: 0 10px 24px rgba(27, 95, 184, 0.35);
+  box-shadow: 0 10px 24px rgba(58, 11, 11, 0.45);
 }
 
 .staff-tag.tag-artist {
